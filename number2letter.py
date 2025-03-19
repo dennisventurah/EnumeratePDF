@@ -45,7 +45,6 @@ class NumberToLetter:
                         del(b[i])
                 ret = ""
                 
-                print(self.llones[:len(b)-1][::-1])
                 for i,j in enumerate(b):
                     ret += self.toLetter(j, i==(len(b)-1)) + " "
                     if int(j) == 1:
